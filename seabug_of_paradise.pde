@@ -5,8 +5,8 @@ final color SEABUG_LEFT_GRADIENT_END_COLOR = #0575e6;
 final color SEABUG_RIGHT_GRADIENT_START_COLOR = #ff6a00;
 final color SEABUG_RIGHT_GRADIENT_END_COLOR = #ee0979;
 final float ANIMATION_SPEED = 8;
-final float HORIZONTAL_OSCILLATION_AMPLITUDE = 128;
-final float HORIZONTAL_OSCILLATION_AMPLITUDE_TIME_PERIOD = 240;
+final float HORIZONTAL_OSCILLATION_AMPLITUDE = 256;
+final float HORIZONTAL_OSCILLATION_AMPLITUDE_TIME_PERIOD = 320;
 
 RadialGradient radialGradient;
 int lastTime = 0;
@@ -15,8 +15,9 @@ float currentCenterX = 0;
 Seabug seabug;
 
 void setup() {
-  fullScreen(P2D);
+  size(1920, 1080, P2D);
   noCursor();
+  strokeWeight(2);
   radialGradient = new RadialGradient(width/2, height/2, BACKGROUND_GRADIENT_START_COLOR, BACKGROUND_GRADIENT_END_COLOR);
   seabug = new Seabug(
     new LinearGradient(SEABUG_LEFT_GRADIENT_START_COLOR, SEABUG_LEFT_GRADIENT_END_COLOR),
