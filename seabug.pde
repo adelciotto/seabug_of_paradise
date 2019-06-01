@@ -26,7 +26,7 @@ class Seabug {
 }
 
 class SeabugLeg {
-  private final static int POINT_SIZE = 4;
+  private final static int POINT_SIZE = 6;
   
   private float x0, y0;
   private float x1, y1;
@@ -52,15 +52,14 @@ class SeabugLeg {
   void draw() {  
     stroke(c1);
     line(this.x0, this.y0, this.x1, this.y1);
-    fill(c1);
-    circle(this.x1, this.y1, POINT_SIZE);
-    
     stroke(c2);
     line(this.x0, this.y0, this.x2, this.y2);
-    fill(c2);
-    circle(this.x2, this.y2, POINT_SIZE);
     
     noStroke();
+    fill(c1);
+    circle(this.x1, this.y1, POINT_SIZE);
+    fill(c2);
+    circle(this.x2, this.y2, POINT_SIZE);
     fill(255);
     circle(this.x0, this.y0, POINT_SIZE);
   }
