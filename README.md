@@ -1,6 +1,6 @@
 # Seabug of Paradise
 
-Source code for the *Seabug of Paradise* digital art piece. Built with [Processing](https://processing.org/).
+Source code for the *Seabug of Paradise* small graphics demo. Built with [Processing](https://processing.org/).
 
 Video link: https://vimeo.com/338829034
 
