@@ -2,8 +2,6 @@
 
 Source code for the *Seabug of Paradise* small graphics demo. Built with [Processing](https://processing.org/).
 
-Video link: https://vimeo.com/338829034
-
 ![preview](preview.png)
 
 ## References & Inspirations
